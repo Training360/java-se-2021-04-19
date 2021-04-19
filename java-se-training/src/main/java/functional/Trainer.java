@@ -1,29 +1,22 @@
 package functional;
 
-public class Trainer {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Trainer implements Comparable<Trainer> {
 
     private String name;
 
-    public Trainer(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public static int byName(Trainer o1, Trainer o2) {
+        return o1.getName().compareTo(o2.getName());
     }
 
     @Override
-    public String toString() {
-        return "Trainer{" +
-                "name='" + name + '\'' +
-                '}';
-    }
-
-    public static int byName(Trainer o1, Trainer o2) {
-        return o1.getName().compareTo(o2.getName());
+    public int compareTo(Trainer another) {
+        return this.getName().compareTo(another.getName());
     }
 }
