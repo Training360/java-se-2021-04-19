@@ -1,0 +1,256 @@
+Java SE tananyag
+Bevezetés a nyelvi eszközökbe
+Eszközkészlet
+Java történeti háttér
+Oracle JDK telepítése
+Java platform
+Maven
+IDE
+Git használata az IDE-ben
+Feltöltés GitHubra
+Eszközkészlet összefoglalás
+Java osztályok
+Kiírás és beolvasás konzolról
+Objektumok és attribútumok
+Metódusok
+Konstruktorok
+UML, példányok konzol íráskor/olvasáskor
+Java osztályok összefoglalás
+A nyelv építõkövei
+Kódolási konvenciók
+Literálok és lokális változók
+Kifejezések és utasítások
+Csomagok
+Java API
+JAR állomány
+Szöveges típus
+Dátum és idõkezelés alapok
+Bevezetés a vezérlési szerkezetekbe
+Bonyolultabb típusok
+Tömbök
+Parancssori paraméterek
+Tömbök tömbje
+Tömbök kezelése
+Lista
+Debug
+Konstans értékek használata
+Math és Random osztály
+Bevezetés az osztályok és objektumok világába
+Objektumok
+Bevezetés az attribútumok használatába
+Bevezetés a konstruktorok használatába
+Bevezetés a metódusok használatába
+Referenciák
+Projektfeladat
+Projektfeladat - Tárgyaló nyilvántartás
+A Java nyelv részletes megismerése
+Típusok és operátorok
+Literálok
+Egyszerû típusok
+Felsorolásos típus
+Operátorok
+Típuskonverzió
+Egész és lebegõpontos számok
+Vezérlési szerkezetek
+Unit tesztelés JUnittal
+JUnit 5
+Vezérlési szerkezetek és az elágazás
+Ciklusok
+Haladó vezérlési szerkezetek
+Bevezetés a kivételkezelésbe
+String, StringBuilder
+String alapok
+Konkatenáció
+Fõbb String metódusok
+StringBuilder
+Scanner
+Fájl olvasása Scannerrel
+printf
+Programozási tételek és egyéb algoritmusok
+Összegzés tétele
+Számlálás tétele
+Szélsõérték keresés tétele
+Eldöntés tétele
+Szûrés
+Transzformáció
+Rekurzió
+Projektfeladat
+School records projektfeladat
+Bónusz feladatok a nyelvi elemekkel kapcsolatban
+Objektumorientáltság
+Attribútumok és metódusok
+Immutable objektumok
+JavaBeans objektumok
+Metódusok
+Értékmásolás szerinti paraméterátadás
+Metódus paraméterek és visszatérési értékek
+Változó hosszúságú paraméterlista
+Metódus hívások láncolása
+Metódusnév túlterhelés
+Statikus attribútumok és metódusok
+Konstruktorok és inicializátorok
+Default és paraméter nélküli konstruktor
+Konstruktor túlterhelés
+Inicializátorok
+Öröklõdés
+Öröklõdés
+Konstruktorok és az öröklõdés viszonya
+Object õsosztály
+Attribútumok öröklõdése
+Metódusok öröklõdése
+Absztrakt osztályok és interfészek
+Absztrakt osztályok
+Interfészek
+Interfészekkel kapcsolatos szabályok
+Dependency inversion
+Default interfész metódusok
+Statikus interfész metódusok
+Interfészek és az öröklõdés viszonya
+Absztrakt metódusok implementálása felsorolásos típusokban
+Állapotgép
+Haladó OO elvek
+Polimorfizmus
+Dinamikus kötés
+is-a has-a kapcsolatok
+Projektfeladat
+Könyvtár katalógus projektfeladat
+Objektumorientáltság bónusz feladatok
+Kivétel- és fájlkezelés
+Kivételkezelés
+Kivételkezelés
+Saját kivétel
+Multi catch
+Try-With-Resources szerkezet
+Fájlkezelés
+Szöveges állomány beolvasása
+String kiírása szöveges állományba
+Bájtos beolvasása fájlból és kiírása fájlba
+String olvasása Readerrel
+String írása Writerrel
+Különbözõ típusok írása PrintWriterrel
+Kiírás Stringbe StringWriterrel
+Bájtok olvasása InputStreammel
+String olvasása classpath-ról
+Bájtok írása OutputStreammel
+Adatok írása OutputStreamre, és olvasás
+Bájtok írása tömörítéssel
+Konvertálás a típusok között
+Files osztály használata
+Fájlkezelés tesztelése
+Projektfeladat
+Activity tracker projektfeladat
+Kollekciók és osztálykönyvtárak
+Kollekció típusok
+Generikusok használata, diamond operátor
+equals, hashCode
+List, ArrayList kontra LinkedList
+Set
+Queue
+Map
+Autoboxing használata kollekcióknál
+Alapvetõ algoritmusok
+Bejárás
+Comparable és Comparator
+Keresés
+Rendezés
+Collections osztály (keresésen, rendezésen felüli metódusok)
+A clone() metódus, deep clone
+Properties állományok
+Lambda kifejezések
+Bevezetés a lambda kifejezések használatába
+Optional használata
+Comparator módosítások
+Streamek
+Streamek
+Intermediate mûveletek
+Primitívek használata streamekben
+Collectors
+Dátum és idõkezelés
+Új típusok, LocalDate, LocalTime, parse
+Period
+Duration
+Idõzónák és téli-nyári idõszámítás
+Instant osztály
+Clock osztály
+Régi dátum- és idõkezeléssel kapcsolatos típusok
+Architektúrák
+JVM
+Third party library-k
+Naplózás
+Projektfeladat
+Timesheet projektfeladat
+Tervezési minták
+Tervezési minták
+Bevezetés a tervezési minták használatába
+S.O.L.I.D. elvek
+Singleton tervezési minta
+Builder tervezési minta
+Template method tervezési minta
+Simple factory tervezési minta
+Projektfeladat
+Projektfeladat (Aukciós portál)
+Párhuzamosság és szálak
+Párhuzamosság
+Szálak
+Executorok
+Szinkronizálás
+Haladó párhuzamosság
+CyclicBarrier és ForkJoinPool
+Java 8 plusz újdonságok, funkcionális programozás
+Bevezetés a Java 8 újdonságaiba
+Újdonságok Java 8-tól
+Interfészek
+Default interfész metódusok
+Statikus interfész metódusok
+Lambda kifejezések
+Bevezetés a lambda kifejezések használatába
+Optional használata
+Comparator módosítások
+Streamek
+Streamek
+Intermediate mûveletek
+Primitívek használata streamekben
+Collectors
+Párhuzamos streamek
+Dátum- és idõkezelés
+Új típusok, LocalDate, LocalTime, parse
+Period
+Duration
+Idõzónák és téli-nyári idõszámítás
+Instant osztály
+Clock osztály
+További Java 8 újdonságok
+Collections Framework módosítások
+Fájlkezelés
+Annotációk
+Párhuzamosság
+Párhuzamosság - CompletableFuture
+További apróságok
+Mester
+Formázás és Locale kezelés
+RegExp
+Locale
+NumberFormat
+Resource Bundle
+MessageFormat
+Nagy számok kezelése
+Belsõ osztályok
+Belsõ osztályok
+Generikusok
+Generikus osztályok
+Generikus interfészek
+Generikus metódusok
+Reflection
+Bevezetés a reflection használatába
+Osztályokkal kapcsolatos információk lekérdezése reflectionnel
+Attribútumok reflectionnel
+Metódusok kezelése reflectionnel
+Konstruktorok kezelése reflectionnel
+Osztály referencia a neve alapján
+Generikusok és tömbök használata reflectionnel
+Dynamic Proxy
+Osztálybetöltés
+Annotációk
+Bevezetés az annotációk használatába
+Részletesen az annotációkról
+Ismételhetõ annotációk
