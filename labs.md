@@ -1,3 +1,5 @@
+# Gyakorlati feladatok
+
 Írj egy `Numbers` osztályt, mely képes a következőkre:
 
 * Kap egy List<Integer> (páros számú), visszaad egy List<Integer>, párokba rendezi, összeadja

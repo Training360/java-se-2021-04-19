@@ -1,2 +1,8 @@
-package interfaces;public interface CanHardWork {
+package interfaces;
+
+public interface CanHardWork {
+
+    default void doWorkForMoney() {
+        System.out.println("can hard work");
+    }
 }

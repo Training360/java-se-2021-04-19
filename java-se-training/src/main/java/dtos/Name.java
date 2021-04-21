@@ -1,2 +1,9 @@
-package dtos;public class Name {
+package dtos;
+
+import lombok.Value;
+
+@Value
+public class Name {
+
+    private String name;
 }

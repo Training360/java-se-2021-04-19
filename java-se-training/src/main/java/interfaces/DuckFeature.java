@@ -1,2 +1,6 @@
-package interfaces;public interface DuckFeature {
+package interfaces;
+
+public interface DuckFeature {
+
+    void doSomething();
 }
