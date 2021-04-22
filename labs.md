@@ -41,3 +41,22 @@ Legyen benne egy `CounterResult countNumbers(List<Integer> numbers)`. Ez egy bej
 szám van benne! Nullát ne számoljátok sehova! Ciklusokkal. `CounterResult`, immutable legyen! Legyen neki konstruktora, és
 csak getterei! Ne legyen settere!
 
+## Bevezetés a JUnit használatába
+
+A `locations` csomagba dolgozz!
+
+Hozz létre egy `Location` osztályt,
+`name`, `lat`, `lon` attribútumokkal! A `name` attribútum `String` típusú legyen!
+A szélességi és hosszúsági koordinátákat
+külön `double` típusú attribútummal ábrázold!
+
+Legyenek getter/setter metódusai, és konstruktora, ahol mind a
+három attribútumát meg lehet adni!
+
+Hozz létre egy `LocationParser` osztályt, mely feladata szöveges értékből
+kinyerni egy kedvenc hely adatait!
+Legyen egy `public Location parse(String text)` metódusa, mely a nevet és a
+koordinátákat vesszővel elválasztva várja (pl. `Budapest,47.497912,19.040235`)! A tizedeshatároló karakter legyen a
+pont! Ez a metódus visszaad egy új példányt, kitöltve a megfelelő attribútum értékekkel.
+Írj rá egy `LocationTest` osztályt, valamint egy `testParse()` metódust,
+mely ezt a metódust teszteli!
