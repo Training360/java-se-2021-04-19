@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -16,10 +17,12 @@ public class EmployeesService {
 
     private EmployeeMapper employeeMapper;
 
+    private final AtomicLong idGenerator = new AtomicLong();
+
     private final List<Employee> employees = new ArrayList<>(
             List.of(
-                    new Employee(1L, "John Doe"),
-                    new Employee(2L, "Jane Doe")
+                    new Employee(idGenerator.incrementAndGet(), "John Doe"),
+                    new Employee(idGenerator.incrementAndGet(), "Jane Doe")
             )
     );
 
@@ -39,6 +42,27 @@ public class EmployeesService {
                 .filter(e -> e.getId() == id)
                 .map(employeeMapper::toDto)
                 .findAny()
-                .orElseThrow(() -> new IllegalArgumentException("Employee not found with id " + id));
+                .orElseThrow(() -> new EmployeeNotFoundException("Employee not found with id " + id));
+    }
+
+    public EmployeeDto createEmployee(CreateEmployeeCommand command) {
+        var employee = new Employee(idGenerator.incrementAndGet(), command.getName());
+        employees.add(employee);
+        return employeeMapper.toDto(employee);
+    }
+
+    public EmployeeDto updateEmployee(long id, UpdateEmployeeCommand command) {
+        return employees.stream()
+                .filter(e -> e.getId() == id)
+                .peek(e -> e.setName(command.getName()))
+                .map(employeeMapper::toDto)
+                .findAny().orElseThrow(() -> new EmployeeNotFoundException("Not found with id: " + id));
+    }
+
+    public void deleteById(long id) {
+        var deleted = employees.removeIf(e -> e.getId() == id);
+        if (!deleted) {
+            throw new EmployeeNotFoundException("Not found with id: " + id);
+        }
     }
 }
