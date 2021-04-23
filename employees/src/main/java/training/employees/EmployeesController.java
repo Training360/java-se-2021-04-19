@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.net.URI;
 import java.util.List;
 import java.util.Optional;
@@ -29,7 +30,7 @@ public class EmployeesController {
 
     @PostMapping
 //    @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<EmployeeDto> createEmployee(@RequestBody CreateEmployeeCommand command) {
+    public ResponseEntity<EmployeeDto> createEmployee(@Valid @RequestBody CreateEmployeeCommand command) {
         var dto = employeesService.createEmployee(command);
         var entity = ResponseEntity
                 .created(URI.create("/api/employees/" + dto.getId()))
@@ -40,7 +41,7 @@ public class EmployeesController {
     }
 
     @PutMapping("{id}")
-    public EmployeeDto updateEmployee(@PathVariable long id, @RequestBody UpdateEmployeeCommand command) {
+    public EmployeeDto updateEmployee(@PathVariable long id, @Valid @RequestBody UpdateEmployeeCommand command) {
         return employeesService.updateEmployee(id, command);
     }
 
