@@ -1,6 +1,7 @@
 package training.employees;
 
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/employees")
 @AllArgsConstructor
+@Slf4j
 public class EmployeesController {
 
     private final EmployeesService employeesService;
@@ -31,6 +33,7 @@ public class EmployeesController {
     @PostMapping
 //    @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<EmployeeDto> createEmployee(@Valid @RequestBody CreateEmployeeCommand command) {
+        log.info("Create employee" + command);
         var dto = employeesService.createEmployee(command);
         var entity = ResponseEntity
                 .created(URI.create("/api/employees/" + dto.getId()))

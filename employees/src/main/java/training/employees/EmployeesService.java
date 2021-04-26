@@ -65,4 +65,8 @@ public class EmployeesService {
             throw new EmployeeNotFoundException("Not found with id: " + id);
         }
     }
+
+    public void deleteAll() {
+        employees.clear();
+    }
 }
