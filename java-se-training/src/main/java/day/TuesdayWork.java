@@ -6,13 +6,13 @@ public class TuesdayWork implements DayWork{
     public void doWork() {
         System.out.println("Tuesday grrrrr");
 
-        String s = """
-                
-                rwerqwe
-                wqerwqer
-                qwerwqe
-                
-                """;
+//        String s = """
+//
+//                rwerqwe
+//                wqerwqer
+//                qwerwqe
+//
+//                """;
     }
 
     public boolean isImportant() {

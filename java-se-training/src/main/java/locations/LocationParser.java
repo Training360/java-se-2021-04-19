@@ -12,17 +12,23 @@ public class LocationParser {
 
     public static final String SEPARATOR = ",";
 
+//    public LocationParser() {
+//        System.out.println("LocationParser");
+//    }
+
     public Location parse(String text) {
         var parts = text.split(SEPARATOR);
-        if (parts.length != NUMBER_OF_PARTS) {
-            throw new IllegalArgumentException("Must contains three parts!");
-        }
-
+        checkLength(parts);
         var name = parts[NAME_POSITION];
         var lat = parseCoordinate(parts[LAT_POSITION], "Lat not number!");
         var lon = parseCoordinate(parts[LON_POSITION], "Lon not number!");
-
         return new Location(name, lat, lon);
+    }
+
+    private void checkLength(String[] parts) {
+        if (parts.length != NUMBER_OF_PARTS) {
+            throw new IllegalArgumentException("Must contains three parts!");
+        }
     }
 
     private double parseCoordinate(String text, String exceptionMessage) {
